@@ -12,11 +12,16 @@ namespace tabuleiro
         public int Colunas { get; set; }
         private Peca[,] Pecas;
 
-        public Tabuleiro(int linha, int colunas)
+        public Tabuleiro(int linhas, int colunas)
         {
-            Linhas = linha;
+            Linhas = linhas;
             Colunas = colunas;
-            Pecas = new Peca[Linhas, Colunas];
+            Pecas = new Peca[linhas, colunas];
+        }
+
+        public Peca peca(int linha, int coluna)
+        {
+            return Pecas[linha, coluna];
         }
     }
 }

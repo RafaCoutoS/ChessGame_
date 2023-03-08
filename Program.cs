@@ -8,10 +8,9 @@ namespace ChessGame_
     {
         static void Main(string[] args)
         {
-            Tabuleiro p = new(8, 8);
-
-            Console.WriteLine();
-
+            Tabuleiro tab = new Tabuleiro (8, 8);
+            
+            Tela.ImprimirTabuleiro(tab);
             
 
         }
