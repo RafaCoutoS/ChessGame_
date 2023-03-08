@@ -8,7 +8,7 @@ namespace tabuleiro
 {
     enum Cor
     {
-        branca = 0,
-        preta = 1
+        Branca = 0,
+        Preta = 1
     }
 }
