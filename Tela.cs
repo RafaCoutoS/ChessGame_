@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using tabuleiro;
@@ -13,6 +14,8 @@ namespace tabuleiro
         {
             for(int i = 0; i < tab.Linhas; i++)
             {
+                Console.Write(8 - i + " ");
+
                 for(int j = 0; j < tab.Colunas; j++)
                 {
                     if (tab.peca(i, j) == null)
@@ -21,10 +24,26 @@ namespace tabuleiro
                     }
                     else
                     {
-                        Console.Write(tab.peca(i, j) + " ");
+                        ImprimirPeca(tab.peca(i, j));
+                        Console.Write(" ");
                     }
                 }
                 Console.WriteLine();
+            }
+            Console.WriteLine("  a b c d e f g h");
+        }
+        public static void ImprimirPeca(Peca peca)
+        {
+            if(peca.Cor == Cor.Branca)
+            {
+                Console.Write(peca);
+            }
+            else
+            {
+                ConsoleColor aux = Console.ForegroundColor;
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write(peca);
+                Console.ForegroundColor = aux;
             }
         }
     }
