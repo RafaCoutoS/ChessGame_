@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChessGame_.Xadrez;
+using System;
 using tabuleiro;
 using Xadrez;
 
@@ -9,17 +10,13 @@ namespace ChessGame_
     {
         static void Main(string[] args)
         {
-           try
-            Tabuleiro tab = new Tabuleiro (8, 8);
+            PosicaoXadrez pos = new('c', 7);
 
-            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
-            tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
-            tab.ColocarPeca(new Rei(tab, Cor.Preta), new Posicao(2, 4));
+            Console.WriteLine(pos);
 
-            Tela.ImprimirTabuleiro(tab);
+            Console.WriteLine(pos.ToPosicao());
 
             Console.ReadLine();
-            
 
         }
     }
