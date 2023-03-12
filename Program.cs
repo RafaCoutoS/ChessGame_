@@ -1,5 +1,6 @@
 ﻿using ChessGame_.Xadrez;
 using System;
+using System.Globalization;
 using tabuleiro;
 using Xadrez;
 
@@ -44,6 +45,8 @@ namespace ChessGame_
                         Console.ReadLine();
                     }
                 }
+                Console.Clear();
+                Tela.ImprimirPartida(partida);
             }
             catch(TabuleiroException e)
             {
