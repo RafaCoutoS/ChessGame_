@@ -38,6 +38,15 @@ namespace tabuleiro
             return false;
         }
 
+        public void DecrementarQteMovimentos()
+        {
+            QteMovimentos--;
+        }
+
+        public void IncrementarQteMovimentos()
+        {
+            QteMovimentos++;
+        }
 
         public bool PodeMoverPara(Posicao pos)
         {

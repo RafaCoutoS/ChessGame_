@@ -20,7 +20,6 @@ namespace ChessGame_
                     {
                         Console.Clear();
                         Tela.ImprimirPartida(partida);
-                                                                          
 
                         Console.WriteLine();
                         Console.Write("Origem: ");
