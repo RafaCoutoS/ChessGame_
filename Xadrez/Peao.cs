@@ -70,12 +70,12 @@ namespace ChessGame_.Xadrez
                     Posicao esquerda = new(Posicao.Linha, Posicao.Coluna - 1);
                     if(Tab.PosicaoValida(esquerda) && ExisteInimigo(esquerda) && Tab.peca(esquerda) == Partida.VulneravelEnPassant)
                     {
-                        mat[esquerda.Linha, esquerda.Coluna] = true;
+                        mat[esquerda.Linha - 1, esquerda.Coluna] = true;
                     }
                     Posicao direita = new(Posicao.Linha, Posicao.Coluna + 1);
                     if (Tab.PosicaoValida(direita) && ExisteInimigo(direita) && Tab.peca(direita) == Partida.VulneravelEnPassant)
                     {
-                        mat[direita.Linha, direita.Coluna] = true;
+                        mat[direita.Linha - 1, direita.Coluna] = true;
                     }
                 }
             }
@@ -111,12 +111,12 @@ namespace ChessGame_.Xadrez
                     Posicao esquerda = new(Posicao.Linha, Posicao.Coluna - 1);
                     if (Tab.PosicaoValida(esquerda) && ExisteInimigo(esquerda) && Tab.peca(esquerda) == Partida.VulneravelEnPassant)
                     {
-                        mat[esquerda.Linha, esquerda.Coluna] = true;
+                        mat[esquerda.Linha +1, esquerda.Coluna] = true;
                     }
                     Posicao direita = new(Posicao.Linha, Posicao.Coluna + 1);
                     if (Tab.PosicaoValida(direita) && ExisteInimigo(direita) && Tab.peca(direita) == Partida.VulneravelEnPassant)
                     {
-                        mat[direita.Linha, direita.Coluna] = true;
+                        mat[direita.Linha+ 1, direita.Coluna] = true;
                     }
                 }
             }
