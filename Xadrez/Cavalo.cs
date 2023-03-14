@@ -9,7 +9,7 @@ namespace Xadrez
 {
     internal class Cavalo : Peca
     {
-        public Cavalo(Tabuleiro tab, Cor cor) : base(cor, tab)
+        public Cavalo(Tabuleiro tab, Cor cor) : base(tab, cor)
         {
         }
 
@@ -20,7 +20,7 @@ namespace Xadrez
 
         private bool PodeMover(Posicao pos)
         {
-            Peca p = Tab.peca(pos);
+            Peca p = Tab.Peca(pos);
             return p == null || p.Cor != Cor;
         }
 
