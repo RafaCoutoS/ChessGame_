@@ -10,4 +10,4 @@
 /* Informações de contato:
  * Numero: (54) 99644-9420 
  * Email: fetznercomerlato@gmail.com
- * LinkeIn: https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BsQaIaFwZSEOs3CvgfOtVSA%3D%3D */
+ * LinkedIn: https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BsQaIaFwZSEOs3CvgfOtVSA%3D%3D */
